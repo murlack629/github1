@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Unbounded", sans-serif;
+  color: #f5f4f3;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.navbar p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.navbar a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-decoration: none;
+  color: #3a3c35;
+}
+
+.nav-link {
+  display: flex;
+  gap: 30px;
+}
+
+.burger {
+  display: none;
+}
+
+.header {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 3%;
+  gap: 70px;
+}
+
+.header-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.header h1 {
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 130px;
+  color: #3a3c35;
+}
+
+.header-div h2 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 5px 0;
+}
+
+.header-div button {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  width: 160px;
+  gap: 10px;
+  justify-content: center;
+  background-color: white;
+}
+
+.grid-cards {
+  width: 100%;
+  margin-top: 100px;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(2, 1fr )
+}
+
+.grid-car {
+  height: 500px;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 30px;
+}
+
+.img-none {
+  display: none;
+  width: 100%;
+}
+
+.card-1 {
+  background: url("images/Rectangle 12.png") center center no-repeat;
+}
+
+.card-2 {
+  background: url("images/Rectangle 12 (1).png") center center no-repeat;
+}
+
+.card-3 {
+  background: url("images/Rectangle 12 (2).png") center center no-repeat;
+}
+
+.card-4 {
+  background: url("images/Rectangle 13.png") center center no-repeat;
+}
+
+.card-5 {
+  background: url("images/Rectangle 13 (1).png") center center no-repeat;
+}
+
+.card-6 {
+  background: url("images/7016c2ede1e3fc3b358792263629dc44 1.png") center center no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.grid-car h2 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #ffff;
+}
+
+.grid-car h1{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.76px;
+  color: #ffff;
+}
+.main-tbn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.btn-rent{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.36px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  width: 160px;
+  gap: 10px;
+  justify-content: center;
+  background-color: white;
+  border: 1px white solid;
+}
+.btn-mile{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.84px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  width: 160px;
+  gap: 10px;
+  justify-content: center;
+  background-color: inherit;
+  color: white;
+  border: 1px white solid;
+}
+@media (max-width: 840px) {
+  .img-none, .burger {
+      display: block;
+  }
+  .img-none{
+      width: 100%;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5 ,
+  .card-6{
+      padding: 0;
+      background: none !important;
+  }
+  .grid-cards{
+      grid-template-columns: 1fr;
+      gap: 0 ;
+  }
+  .grid-car h2 , .grid-car h1{
+      color: #3a3c35 !important;
+  }
+  .main-tbn button {
+      color: #3a3c35;
+      border: 1px solid #3a3c35 !important;
+  }
+  .nav-link, .navbar p {
+      display: none;
+  }
+}
